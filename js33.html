@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 800px;
+            height: 300px;
+            margin: 10px auto;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        #big {
+            width: 550px;
+            height: 500px;
+            margin: 0 auto;
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        img {
+            width: 250px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <p><img src="./images/minsk1.jpg" onclick="bigPic1()">Костёл</p>
+
+        <p><img src="./images/minsk2.jpg" onclick="bigPic2()">Троицкое</p>
+
+        <p><img src="./images/mir.gif" onclick="bigPic3()">Мир</p>
+    </div>
+    <div id="big"></div>
+    <script>
+
+      
+        function bigPic1() {
+            big.innerHTML = `<p><img onClick="big.innerHTML=''" src="./images/minsk1.jpg" style="width: 600px; height: 350px">
+                Костёл святого Симеона и святой Елены, часто называемый также Красным костёлом — наиболее известный католический храм Минска.
+                </p>`;
+        }
+
+        function bigPic2() {
+            big.innerHTML = `<p><img onClick="big.innerHTML=''" src="./images/minsk2.jpg" style="width: 600px; height: 350px">
+                Тро́ицкое предме́стье — исторический район города Минска, расположенный в северо-восточной части исторического центра на левом берегу реки Свислочь.
+                </p>`;
+        }
+
+        function bigPic3() {
+            big.innerHTML = `<p><img onClick="big.innerHTML=''" src="./images/mir.gif" style="width: 600px; height: 350px">
+                Построенный в начале XVI в. магнатом Ю. И. Ильиничем замок стал первым частнособственническим замком на землях Белоруссии
+                </p>`;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
